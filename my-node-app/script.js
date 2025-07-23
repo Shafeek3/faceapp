@@ -22,7 +22,12 @@ const db = knex({
         database: 'faceapp'
       },
   searchPath: ['public'],
-  debug: true,
+  
+});
+
+// ✅ NEW: Root route to avoid "Cannot GET /"
+app.get("/", (req, res) => {
+  res.send("✅ FaceApp Backend is running on Render!");
 });
 
 const app = express();
