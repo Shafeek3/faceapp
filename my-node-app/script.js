@@ -9,13 +9,18 @@ const fetch = require("node-fetch");
 
 const db = knex({
   client: 'pg',
-  connection: process.env.DATABASE_URL || {
-    host: '127.0.0.1',
-    port: 5432,
-    user: 'shafe',
-    password: 'shafeek',
-    database: 'faceapp',
-  },
+  connection: process.env.DATABASE_URL
+    ? {
+        connectionString: process.env.DATABASE_URL,
+        ssl: { rejectUnauthorized: false }  // ✅ Render Postgres requires SSL
+      }
+    : {
+        host: '127.0.0.1',
+        port: 5432,
+        user: 'shafe',
+        password: 'shafeek',
+        database: 'faceapp'
+      },
   searchPath: ['public'],
   debug: true,
 });
