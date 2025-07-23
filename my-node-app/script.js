@@ -6,6 +6,9 @@ const bcrypt = require("bcrypt");
 const knex = require('knex');
 const fetch = require("node-fetch");
 
+const app = express();
+app.use(cors());
+app.use(express.json());
 
 const db = knex({
   client: 'pg',
@@ -30,9 +33,7 @@ app.get("/", (req, res) => {
   res.send("✅ FaceApp Backend is running on Render!");
 });
 
-const app = express();
-app.use(cors());
-app.use(express.json());
+
 
 // Clarifai API settings
 const CLARIFAI_API_KEY = process.env.CLARIFAI_API_KEY;
