@@ -1,0 +1,13 @@
+/* .Tilt-inner{
+     background: linear-gradient(89deg,#FF5EDF 0%, #04C8DE);
+} */
+img{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}

@@ -1,0 +1,14 @@
+
+/* Make ParticlesBg stay in the background */
+canvas {
+  position: fixed !important; /* Keeps it full-screen */
+  top: 0;
+  left: 0;
+  z-index: 0; /* Always behind */
+}
+
+/* Ensure all UI stays above the background */
+.wrapper {
+  position: relative;
+  z-index: 1; /* Above particles */
+}

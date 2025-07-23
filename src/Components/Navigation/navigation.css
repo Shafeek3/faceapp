@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+
+  /* Make sure it stays on top of ParticlesBg or other overlays */
+  position: relative;
+  z-index: 9999;
+}
+
+.navigation p {
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.navigation p:hover {
+  color: #555;
+}

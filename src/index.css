@@ -1,0 +1,35 @@
+
+body{
+    margin:0;
+    padding:0;
+
+    background: linear-gradient(89deg,#FF5EDF 0%, #04C8DE);
+}
+.Tilt-inne{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-heading{
+    .custom-heading {
+  font-family: 'Raleway', sans-serif;  /* change font */
+  text-transform: uppercase;           /* make it all caps */
+  letter-spacing: 2px;                 /* more spacing for style */
+  
+ 
+
+  /* Optional animation */
+  animation: gradient-move 5s ease infinite;
+}
+
+/* Animate gradient */
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+}
