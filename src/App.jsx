@@ -21,7 +21,8 @@ function App() {
   const [route, setRoute] = useState("signin");
   const [user, setUser] = useState(null);
 
-  const backendURL = "http://localhost:3000"; // backend proxy
+  const backendURL = "https://faceapp-backend-a7ve.onrender.com";
+
 
   const routeToHome = (userData) => {
     setUser(userData);
